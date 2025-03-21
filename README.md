@@ -2,6 +2,7 @@
 
 A **real-time chat application** with *instant messaging, image uploads, and real-time updates using WebSockets*. Built with a **MERN stack and additional technologies for seamless communication**.
 
+
 ## 📌 Features
 
 ### 🔒 User Authentication (JWT-based)
@@ -11,7 +12,8 @@ A **real-time chat application** with *instant messaging, image uploads, and rea
 ### 📷 Image Upload Support (Cloudinary)
 
 ### 🔔 Live Notifications (via WebSockets)
-
+*
+*
 
 
 ## 🏗 Tech Stack Used
