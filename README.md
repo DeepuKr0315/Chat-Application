@@ -12,8 +12,6 @@ A **real-time chat application** with *instant messaging, image uploads, and rea
 ### 📷 Image Upload Support (Cloudinary)
 
 ### 🔔 Live Notifications (via WebSockets)
-*
-*
 
 
 ## 🏗 Tech Stack Used
