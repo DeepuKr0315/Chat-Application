@@ -1,15 +1,15 @@
 import express from "express"
 import dotenv from "dotenv"
 import cookieParser from "cookie-parser"
-import authRoutes from "./routes/auth.route.js"
-import messageRoutes from "./routes/message.route.js"
 import cors from "cors"
 
 import { connectDB } from "./lib/db.js"
 
-dotenv.config()
+import authRoutes from "./routes/auth.route.js"
+import messageRoutes from "./routes/message.route.js"
+import { app, server } from "./lib/socket.js"
 
-const app = express()
+dotenv.config()
 
 const PORT = process.env.PORT
 
@@ -25,7 +25,7 @@ app.use(
 app.use("/api/auth", authRoutes)
 app.use("/api/messages", messageRoutes)
 
-app.listen(5001, () => {
+server.listen(PORT, () => {
     console.log("server is running on PORT:"+PORT)
     connectDB()
 })
